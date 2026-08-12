@@ -1,0 +1,61 @@
+# --- Backend / Python ---
+# Byte-compiled / optimized / DLL files
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.venv/
+venv/
+ENV/
+env/
+backend/.venv/
+
+# Environment variables (contains sensitive database passwords & keys)
+.env
+backend/.env
+
+# Test / database caches
+.pytest_cache/
+backend/.pytest_cache/
+.coverage
+htmlcov/
+
+# --- Frontend / Node ---
+# Dependency directories
+node_modules/
+frontend/node_modules/
+
+# Production build outputs
+dist/
+frontend/dist/
+build/
+
+# Local env files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+frontend/.env.local
+
+# Linter caches
+.eslintcache
+
+# --- OS & Editors ---
+# Windows thumbnail database & desktop settings
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS files
+.DS_Store
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*.log
