@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
-
+const API_URL = import.meta.env.VITE_API_URL || '';
 // Coordinates of Hyderabad Areas for plotting the interactive SVG Map
 const LOCATION_COORDS = {
   "Miyapur": [17.4968, 78.3614],
@@ -200,7 +200,7 @@ function App() {
   // Fetch initial location data
   const fetchLocations = async () => {
     try {
-      const res = await fetch('/api/locations');
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/locations`)
       if (res.ok) {
         const data = await res.json();
         setLocations(data);
